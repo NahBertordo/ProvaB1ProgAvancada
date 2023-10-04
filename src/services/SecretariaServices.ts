@@ -10,6 +10,7 @@ class secretariaServices{
         try{
             const secretaria = await prisma.secretaria.create({
                 data:{
+                    id: crSecretaria.id,
                     nome: crSecretaria.nome,
                     RG: crSecretaria.RG,
                 }

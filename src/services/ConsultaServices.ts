@@ -10,6 +10,7 @@ class Consulta{
         try {
           const consulta = await prisma.consulta.create({
             data: {
+              id: crConsulta.id,
               data: crConsulta.data,
               nomePcnte: crConsulta.nomePcnte,
               nomeDents: crConsulta.nomeDents,
